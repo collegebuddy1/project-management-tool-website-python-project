@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project Management Tool</h1>
+    </header>
+    
+    <div class="container">
+        <section id="registration">
+            <h2>Register</h2>
+            <form id="registration-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        
+        <section id="create-post">
+            <h2>Create Post</h2>
+            <form id="post-form">
+                <input type="text" id="post-content" placeholder="Enter your post" required>
+                <button type="submit">Post</button>
+            </form>
+        </section>
+        
+        <section id="assign-task">
+            <h2>Assign Task</h2>
+            <form id="task-form">
+                <input type="text" id="task-title" placeholder="Task Title" required>
+                <select id="assignee" required>
+                    <option value="" disabled selected>Select Assignee</option>
+                    <!-- Populate with registered users -->
+                </select>
+                <button type="submit">Assign Task</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Project Management Tool</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
